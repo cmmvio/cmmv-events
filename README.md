@@ -12,10 +12,5 @@
   <a href="https://github.com/andrehrferreira/cmmv-events/issues">Report Issue</a>
 </p>
 
-## Description
-
-The `@cmmv/normalizer` module provides tools for parsing, transforming, and normalizing data from large files in various formats, such as **JSON**, **XML**, and **YAML**. Built for **performance** and **scalability**, it uses **stream-based parsing** to handle large datasets with minimal memory usage. The module integrates seamlessly with CMMV models and contracts, ensuring data consistency and validation.
-
-Additionally, `@cmmv/normalizer` includes **tokenization** capabilities for handling sensitive data, leveraging `@cmmv/encryptor` for AES256 encryption and elliptic curve key generation.
 
 
