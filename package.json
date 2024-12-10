@@ -1,5 +1,5 @@
 {
-    "name": "cmmv-events",
+    "name": "@cmmv/events",
     "version": "0.0.2",
     "description": "Events module for CMMV",
     "keywords": [
