@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/andrehrferreira/cmmv-events/compare/v0.0.2...v0.0.3) (2024-12-10)
+
+
+### Bug Fixes
+
+* package name ([336bd3d](https://github.com/andrehrferreira/cmmv-events/commit/336bd3dc3c069f6b80bc9553bf0ff40c12749c18))
+
+
+
 ## 0.0.2 (2024-12-10)
 
 
