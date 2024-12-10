@@ -18,16 +18,19 @@ export class EventsService extends Singleton {
       instance.emitter = new EventEmitter2(config);
       const events: any = EventsRegistry.getEvents();
 
-      events.forEach(async ([message, metadata]) => {});
-
-      const services: any = ServiceRegistry.getServices();
-
-      console.log(events);
+      events.forEach(async ([message, metadata]) => {
+        metadata?.consumes.forEach(({ cb }) => {
+          instance.emitter.on(message, (payload) => cb(payload));
+        });
+      });
     } catch (e) {
       instance.logger.error(e.message);
       console.error(e);
     }
   }
 
-  public emit() {}
+  public emit(message: string, payload: any) {
+    const instance = EventsService.getInstance();
+    instance.emitter.emit(message, payload);
+  }
 }

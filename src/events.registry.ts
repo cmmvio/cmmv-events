@@ -1,25 +1,20 @@
 export class EventsRegistry {
-  public static events = new Map<
-    string,
-    {
-      consumes: any[];
-    }
-  >();
+  public static events = new Map<string, { consumes: any[] }>();
 
   public static registerConsumeHandler(
     target: any,
     message: string,
     handlerName: string,
+    callback: Function,
   ) {
     let events = this.events.get(message);
-    console.log(target);
 
     if (!events) {
       this.events.set(message, {
         consumes: [],
       });
 
-      events = this.events.get(target.constructor);
+      events = this.events.get(message);
     }
 
     if (events) {
@@ -27,9 +22,8 @@ export class EventsRegistry {
         (msg) => msg.handlerName === handlerName,
       );
 
-      if (!handler)
-        events.consumes.push({ handlerName, cb: target.constructor });
-      else handler.cb = target.constructor;
+      if (!handler) events.consumes.push({ handlerName, cb: callback });
+      else handler.cb = callback;
     }
   }
 
@@ -43,11 +37,6 @@ export class EventsRegistry {
   }
 
   public static clear() {
-    EventsRegistry.events = new Map<
-      string,
-      {
-        consumes: any[];
-      }
-    >();
+    EventsRegistry.events = new Map<string, { consumes: any[] }>();
   }
 }
