@@ -14,7 +14,7 @@
 
 ## Description
 
-The `@cmmv/events` module provides a simple and scalable event management system for applications built with the CMMV framework. By leveraging `eventemitter2`, it allows developers to create, emit, and listen to events across the application seamlessly. 
+The `@cmmv/events` module provides a simple and scalable event management system for applications built with the CMMV framework. By leveraging [`eventemitter2`](https://www.npmjs.com/package/eventemitter2), it allows developers to create, emit, and listen to events across the application seamlessly. 
 
 ## Features
 
