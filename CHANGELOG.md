@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/andrehrferreira/cmmv-events/compare/v0.0.3...v0.0.4) (2025-01-22)
+
+
+### Bug Fixes
+
+* package ([1fd8665](https://github.com/andrehrferreira/cmmv-events/commit/1fd86657be504cc7e39a9701fa01faead51d86b9))
+
+
+
 ## [0.0.3](https://github.com/andrehrferreira/cmmv-events/compare/v0.0.2...v0.0.3) (2024-12-10)
 
 
