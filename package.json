@@ -6,6 +6,15 @@
         "cmmv",
         "events"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/andrehrferreira/cmmv-events.git"
+    },
+    "bugs": {
+        "url": "https://github.com/andrehrferreira/cmmv-events/issues"
+    },
+    "license": "MIT",
+    "homepage": "https://cmmv.io",
     "author": "Andre Ferreira",
     "publishConfig": {
         "access": "public"
