@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/cmmvio/cmmv-events/compare/v0.0.4...v0.0.5) (2025-01-24)
+
+
+### Bug Fixes
+
+* repository ([0175363](https://github.com/cmmvio/cmmv-events/commit/01753635f21956d485ba8663b2a0ba871b97ac34))
+
+
+
 ## [0.0.4](https://github.com/cmmvio/cmmv-events/compare/v0.0.3...v0.0.4) (2025-01-22)
 
 
