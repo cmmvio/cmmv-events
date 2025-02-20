@@ -3,7 +3,6 @@ import { Singleton, Service, Logger, Application, Config } from '@cmmv/core';
 import { EventEmitter2 } from 'eventemitter2';
 
 import { EventsRegistry } from './events.registry';
-import { ServiceRegistry } from '@cmmv/core';
 
 @Service('events')
 export class EventsService extends Singleton {
@@ -24,7 +23,9 @@ export class EventsService extends Singleton {
         });
       });
     } catch (e) {
-      instance.logger.error(e.message);
+      if (e instanceof Error) instance.logger.error(e.message);
+      else instance.logger.error(String(e));
+
       console.error(e);
     }
   }

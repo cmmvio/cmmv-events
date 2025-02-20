@@ -1,16 +1,16 @@
 import { EventsRegistry } from './events.registry';
 
 export function OnEvent(message: string): MethodDecorator {
-  return (
-    target,
+  return function (
+    target: Object,
     propertyKey: string | symbol,
-    descriptor: PropertyDescriptor,
-  ) => {
+    descriptor: TypedPropertyDescriptor<any>,
+  ) {
     EventsRegistry.registerConsumeHandler(
       target,
       message,
       propertyKey as string,
-      descriptor.value,
+      descriptor?.value,
     );
   };
 }

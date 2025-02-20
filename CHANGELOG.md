@@ -1,3 +1,7 @@
+# [0.1.0](https://github.com/cmmvio/cmmv-events/compare/v0.0.5...v0.1.0) (2025-02-20)
+
+
+
 ## [0.0.5](https://github.com/cmmvio/cmmv-events/compare/v0.0.4...v0.0.5) (2025-01-24)
 
 
