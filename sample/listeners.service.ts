@@ -1,14 +1,17 @@
-import { Service } from '@cmmv/core';
-import { OnEvent } from '../src/events.decorator';
+import { Application, Logger } from '@cmmv/core';
 import { EventsService } from '../src/events.service';
+import { OnEvent } from '../src/events.decorator';
 
-@Service('listerner')
 export class Listerner {
-  constructor(private readonly eventsService: EventsService) {}
+    public logger: Logger = new Logger('Listerner');
 
-  @OnEvent('hello-world')
-  public async OnReciveMessage(payload: any) {
-    console.log('hello-world', payload);
-    //this.eventsService.emit("hello-world", { hello: "world" });
-  }
+    public static async loadConfig(application: Application): Promise<void> {
+        const eventsService = Application.resolveProvider(EventsService);
+        eventsService.emit('hello-world', { hello: 'world' });
+    }
+
+    @OnEvent('hello-world')
+    public async OnReciveMessage(payload: any) {
+        console.log('OnReciveMessage', payload);
+    }
 }

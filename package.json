@@ -30,7 +30,8 @@
     "exports": {
         ".": {
             "import": "./dist/esm/main.js",
-            "require": "./dist/cjs/main.js"
+            "require": "./dist/cjs/main.js",
+            "types": "./dist/types/main.d.ts"
         }
     },
     "lint-staged": {
@@ -44,29 +45,37 @@
         "prepare": "husky",
         "lint": "cmmv lint",
         "release": "cmmv release",
-        "sample": "cmmv run ./sample/sample.ts",
+        "sample": "tsx ./sample/sample.ts",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
     },
     "devDependencies": {
-        "@cmmv/cli": "^0.5.9",
-        "@cmmv/http": "^0.8.18",
-        "@cmmv/view": "^0.8.18",
-        "@commitlint/cli": "^19.7.1",
-        "@commitlint/config-angular": "^19.7.1",
-        "@commitlint/config-conventional": "^19.7.1",
-        "@tsconfig/node22": "^22.0.0",
-        "@types/node": "^22.13.4",
+        "@cmmv/cli": "latest",
+        "@cmmv/http": "latest",
+        "@cmmv/view": "latest",
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-angular": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
+        "@tsconfig/node22": "^22.0.1",
+        "@types/eventemitter2": "^4.1.2",
+        "@types/node": "^22.13.14",
         "conventional-changelog": "^6.0.0",
         "conventional-changelog-cli": "^5.0.0",
-        "esbuild": "^0.25.0",
+        "esbuild": "^0.25.2",
         "husky": "^9.1.7",
-        "lint-staged": "^15.4.3",
+        "lint-staged": "^15.5.0",
         "tslib": "^2.8.1",
-        "typescript": "^5.7.3",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.2",
         "vitest": "^2.1.9"
     },
     "dependencies": {
-        "@cmmv/core": "^0.8.18",
+        "@cmmv/core": "latest",
         "eventemitter2": "^6.4.9"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@swc/core",
+            "esbuild"
+        ]
     }
 }
