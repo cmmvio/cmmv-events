@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@cmmv/cli':
         specifier: latest
-        version: 0.10.13(@swc/types@0.1.20)(@types/node@22.13.14)(conventional-commits-filter@5.0.0)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)
+        version: 0.10.14(@swc/types@0.1.20)(@types/node@22.13.14)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)
       '@cmmv/http':
         specifier: latest
         version: 0.9.22
@@ -83,8 +83,8 @@ packages:
   '@cmmv/body-parser@0.9.5':
     resolution: {integrity: sha512-DSHSEzVEyrCNiwiFLjtHsyG2XB5AZ/+Ow6gOmGICkB1ru7XC8qCL+2S+QskdYOs7FJWuhTw0HxDwTM3kD5WbGg==}
 
-  '@cmmv/cli@0.10.13':
-    resolution: {integrity: sha512-Lzjzc7WnhO8PxcF45qFZ4Ly9zHkbTxj20r2gFr6rsplw1Dp3QYx+0x9DhjMqmorHP2sCTlkFiN717Vzqe+2VSg==}
+  '@cmmv/cli@0.10.14':
+    resolution: {integrity: sha512-FbxxbqyzwghqOgk7RxgC5jBF3myQfNk513UPaikeGrUm5eB9vY5UJOMZesbGt6+Qt8Urwgj2QwPgFWWVGHT3Zw==}
     engines: {node: '>=16.14'}
     hasBin: true
 
@@ -3423,7 +3423,7 @@ snapshots:
       type-is: 1.6.18
       unpipe: 1.0.0
 
-  '@cmmv/cli@0.10.13(@swc/types@0.1.20)(@types/node@22.13.14)(conventional-commits-filter@5.0.0)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)':
+  '@cmmv/cli@0.10.14(@swc/types@0.1.20)(@types/node@22.13.14)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)':
     dependencies:
       '@cmmv/core': 0.9.22
       '@commitlint/cli': 19.8.0(@types/node@22.13.14)(typescript@5.8.2)
@@ -3441,8 +3441,6 @@ snapshots:
       chalk: 5.4.1
       chokidar: 4.0.3
       commander: 11.1.0
-      conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
-      conventional-changelog-cli: 5.0.0(conventional-commits-filter@5.0.0)
       dotenv: 16.4.7
       enquirer: 2.4.1
       esbuild: 0.25.2
@@ -3475,7 +3473,6 @@ snapshots:
       - '@types/node'
       - '@vitest/browser'
       - '@vitest/ui'
-      - conventional-commits-filter
       - eslint
       - happy-dom
       - jiti

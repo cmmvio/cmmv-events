@@ -45,8 +45,7 @@
         "prepare": "husky",
         "lint": "cmmv lint",
         "release": "cmmv release",
-        "sample": "tsx ./sample/sample.ts",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+        "sample": "tsx ./sample/sample.ts"
     },
     "devDependencies": {
         "@cmmv/cli": "latest",
@@ -58,8 +57,6 @@
         "@tsconfig/node22": "^22.0.1",
         "@types/eventemitter2": "^4.1.2",
         "@types/node": "^22.13.14",
-        "conventional-changelog": "^6.0.0",
-        "conventional-changelog-cli": "^5.0.0",
         "esbuild": "^0.25.2",
         "husky": "^9.1.7",
         "lint-staged": "^15.5.0",
