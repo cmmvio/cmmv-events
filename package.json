@@ -45,17 +45,16 @@
         "prepare": "husky",
         "lint": "cmmv lint",
         "release": "cmmv release",
-        "sample": "tsx ./sample/sample.ts"
+        "sample": "tsx ./sample/sample.ts",
+        "changelog": "cmmv changelog"
     },
     "devDependencies": {
         "@cmmv/cli": "latest",
         "@cmmv/http": "latest",
-        "@cmmv/view": "latest",
         "@commitlint/cli": "^19.8.0",
         "@commitlint/config-angular": "^19.8.0",
         "@commitlint/config-conventional": "^19.8.0",
         "@tsconfig/node22": "^22.0.1",
-        "@types/eventemitter2": "^4.1.2",
         "@types/node": "^22.13.14",
         "esbuild": "^0.25.2",
         "husky": "^9.1.7",
