@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@cmmv/cli':
         specifier: latest
-        version: 0.10.15(@swc/types@0.1.20)(@types/node@22.13.14)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)
+        version: 0.10.17(@swc/types@0.1.20)(@types/node@22.13.14)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)
       '@cmmv/http':
         specifier: latest
         version: 0.9.22
@@ -71,8 +71,8 @@ packages:
   '@cmmv/body-parser@0.9.5':
     resolution: {integrity: sha512-DSHSEzVEyrCNiwiFLjtHsyG2XB5AZ/+Ow6gOmGICkB1ru7XC8qCL+2S+QskdYOs7FJWuhTw0HxDwTM3kD5WbGg==}
 
-  '@cmmv/cli@0.10.15':
-    resolution: {integrity: sha512-U0RbYFaHN25BBAXRyhzq/rS9Ue8rMlQIoIBlPruTCER5ixCuzow5SCCaooenkWoYktM66OtixaqWrFNE5viXGQ==}
+  '@cmmv/cli@0.10.17':
+    resolution: {integrity: sha512-7PZwDZvaKBaH2909wFBalbd/TKOdPCbyChA0IL9KEHxcUhXC3HWy3ZX1W/rIhxowoXNgcn0PVlmynlX9uEX46Q==}
     engines: {node: '>=16.14'}
     hasBin: true
 
@@ -3228,7 +3228,7 @@ snapshots:
       type-is: 1.6.18
       unpipe: 1.0.0
 
-  '@cmmv/cli@0.10.15(@swc/types@0.1.20)(@types/node@22.13.14)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)':
+  '@cmmv/cli@0.10.17(@swc/types@0.1.20)(@types/node@22.13.14)(eslint@9.23.0(jiti@2.4.2))(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)':
     dependencies:
       '@cmmv/core': 0.9.22
       '@commitlint/cli': 19.8.0(@types/node@22.13.14)(typescript@5.8.2)
